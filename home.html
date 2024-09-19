@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <style>
+        /* Simple styles for layout, to be replaced with Tailwind later */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f7fafc;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            max-width: 900px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Desktop view */
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .sidebar {
+                width: 25%;
+                text-align: center;
+            }
+
+            .content {
+                width: 70%;
+            }
+        }
+
+        /* Mobile view */
+        @media (max-width: 767px) {
+            .sidebar, .content {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 50%;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1a202c;
+            margin: 10px 0;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar for desktop, top section for mobile -->
+        <div class="sidebar">
+            <img src="IMG_0115.jpg" alt="My Face">
+            <h1>Tharuka Kodituwakku</h1>
+            <a href="https://www.linkedin.com/in/tharuka-kodituwakku" target="_blank">LinkedIn</a><br>
+            <a href="https://github.com/tharukakk1" target="_blank">GitHub</a>
+        </div>
+
+        <!-- Main content section -->
+        <div class="content">
+            <p>Hi, I'm Tharuka.</p>
+            <p>This website is under construction. Pardon the dust!</p>
+        </div>
+    </div>
+
+</body>
+</html>
